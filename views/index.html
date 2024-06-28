@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog Article</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Technical Blog Article</h1>
+    </header>
+    <main>
+        <section>
+            <p>Embarking on the journey to become a proficient backend developer is filled with challenges and learning opportunities. One of the most rewarding aspects is solving complex problems that not only test your skills but also push you to grow. In this blog, I'll share a recent difficult backend problem I encountered and the step-by-step process I used to solve it. Additionally, I'll discuss my aspirations with the HNG Internship and why I believe it's a crucial step in my career development.</p>
+        </section>
+        <section>
+            <h2>The Problem</h2>
+            <p>Recently, I faced a challenging issue while developing an API for a job application platform. The task was to create a robust and secure API that allows users to apply for jobs, including uploading their resumes. The complexity arose from the need to handle multiple file types, ensure data validation, and securely store user information in a MongoDB database.</p>
+        </section>
+        <section>
+            <h2>Step-by-Step Solution</h2>
+            <h3>Step 1: Setting Up the Environment</h3>
+            <p>First, I set up my development environment using Node.js and Express. These technologies provide a solid foundation for building scalable and efficient backend services.</p>
+            <pre>
+<code>
+mkdir job-application-api
+cd job-application-api
+npm init -y
+npm install express mongoose multer
+</code>
+            </pre>
+            <h3>Step 2: Creating the Express Server</h3>
+            <p>Next, I created the basic structure of the Express server. This included setting up middleware for JSON parsing and defining the initial routes.</p>
+            <h3>Step 3: Defining the Mongoose Schema</h3>
+            <p>To ensure data validation and structure, I defined a Mongoose schema for the job applications. This schema included fields for the applicant's name, email, job ID, and the resume file.</p>
+            <h3>Step 4: Setting Up File Upload with Multer</h3>
+            <p>Multer is a middleware for handling multipart/form-data, primarily used for uploading files. I configured Multer to handle resume uploads and store them in a designated folder.</p>
+            <h3>Step 5: Creating the POST Route</h3>
+            <p>The next step was to create the POST route that handles job applications. This route validates the input data, handles the file upload, and saves the application to the MongoDB database.</p>
+        </section>
+        <section>
+            <h2>Why HNG Internship?</h2>
+            <p>The HNG Internship is an incredible opportunity for aspiring developers to enhance their skills, gain real-world experience, and connect with industry professionals. As I start this journey, I am excited about the hands-on projects, the mentorship from experienced developers, and the chance to collaborate with peers from around the world.</p>
+            <p>Participating in the HNG Internship will allow me to further refine my backend development skills, tackle more complex problems, and contribute to meaningful projects. Moreover, the structured learning path and the supportive community will be instrumental in achieving my career goals.</p>
+            <p>To learn more about the HNG Internship and its offerings, check out <a href="https://hng.tech/internship">HNG Internship</a> and if you're looking to hire talented developers, visit <a href="https://hng.tech/hire">HNG Hire</a>.</p>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Solving backend challenges is an integral part of a developer's growth journey. By breaking down problems and systematically addressing each component, we not only find solutions but also build a deeper understanding of the technologies we use. The HNG Internship represents the next step in my journey, offering the perfect platform to learn, grow, and succeed in the tech industry. I look forward to the challenges and opportunities that lie ahead.</p>
+            <p>By sharing this experience, I hope to inspire other developers to embrace the complexities of backend development and take advantage of opportunities like the HNG Internship to propel their careers forward.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Cornelius Oaikhienan All rights reserved.</p>
+    </footer>
+</body>
+</html>
