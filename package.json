@@ -1,7 +1,8 @@
 {
   "name": "blog-article",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A simple Node.js app",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
